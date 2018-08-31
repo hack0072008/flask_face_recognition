@@ -1,0 +1,31 @@
+<!doctype html>
+<div align="center">
+
+<img src={{ url1 }}>
+<img src={{ url2 }}>
+<br>
+
+<img src="/static/img/frame/{{ url3 }}">
+<img src="/static/img/frame/{{ url4 }}">
+
+<h4> {{ filename1_text }} </h4>
+</p>
+</p>
+
+{# <h2> 匹配结果:{{ result }} </h2> #}
+
+<h2> 验证结果:</h2>
+{% if result is equalto '1'  %}
+    <h2> 恭喜你,这是同一个人! </h2>
+{% elif result is equalto '0'  %}
+    <h2> 遗憾,不是同一个人. </h2>
+{% endif %}
+
+
+</p>
+<h2> 识别结果: 文件1 {{ person_name1 }}, 欢迎你的到来. </h2>
+<h2> 识别结果: 文件2 {{ person_name2 }}, 谢谢你的惠顾. </h2>
+</p>
+
+<a href={{url_for("index")}}>首页</a>
+</div>

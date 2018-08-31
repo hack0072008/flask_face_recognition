@@ -1,0 +1,26 @@
+<!doctype html>
+
+<div style="width:100%;text-align:center">
+<h3>注意: 不支持中文文件名!</h2>
+<h3>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;注意: 图片人脸验证请用单人脸大头照</h2>
+<h3>注意: 歌曲只播放文件1</h2>
+<form method=POST enctype=multipart/form-data action="{{ url_for('upload') }}">
+	<div>
+	    文件1:&emsp;&emsp;<input type=file name=upload1>
+    </div>
+    </p>
+	<div>
+	    文件2:&emsp;&emsp;<input type=file name=upload2>
+    </div>
+	<br>
+	<br>
+	<br>
+	<div>
+        <input type=submit>
+    </div>
+</form>
+	<br>
+	<br>
+	<br>
+<a href = {{ url_for("index") }}>首页</a>
+</div>

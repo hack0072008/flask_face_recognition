@@ -1,0 +1,10 @@
+<!doctype html>
+<div style="width:100%;text-align:center">
+<h3>注意:不支持中文文件名!</h2>
+<form method=POST enctype=multipart/form-data action="{{ url_for('download') }}">
+    <input type="text" name=filename>
+    <input type=submit>
+</form>
+</p>
+<a href = {{ url_for("index") }}>首页</a>
+</div>
