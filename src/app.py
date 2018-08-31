@@ -1,10 +1,10 @@
 #!/usr/bin/python
 #-*-coding:utf-8-*-
 # vim: tabstop=4 shiftwidth=4 softtabstop=4
-# copyright 2018 Sengled, Inc.
+# copyright 2018 , Inc.
 # All Rights Reserved.
 
-# @author: Zhangyh, Sengled, Inc.
+# @author: Zhangyh, Inc.
 
 from flask_uploads import UploadSet, configure_uploads
 
